@@ -27,5 +27,5 @@ jobs:
       - run: echo "${{ secrets.ukraida }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
       #Deploy
-      - run: rsync -e "ssh -p 65002 -i $HOME/.ssh/key -o StrictHostKeyChecking=no"  --archive --compress --delete  --exclude '.github' --exclude '.git' --exclude 'node_modules' . u298000242@45.84.206.132:/home/u298000242/domains/ukraida.ddns.net.ua/public_html/wp-content/themes/ukraida
+      - run: rsync -e "ssh -p 65002 -i $HOME/.ssh/key -o StrictHostKeyChecking=no"  --archive --compress --exclude '.github' --exclude '.git' --exclude  --delete . u298000242@45.84.206.132:/home/u298000242/domains/ukraida.ddns.net.ua/public_html/wp-content/themes/ukraida
       #- run: ll
