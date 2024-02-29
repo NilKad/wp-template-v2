@@ -6,7 +6,7 @@ get_header();
 ?>
 <main>
     <section class="section section__next-event">
-        <div class="comtainer container__next-event">
+        <div class="container container__next-event">
             <?php get_template_part('parts/next-event', null, []); ?>
         </div>
     </section>
