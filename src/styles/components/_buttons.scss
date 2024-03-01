@@ -1,7 +1,8 @@
 /* 
 You can use this class for button
- btn-yellow           - main button
- btn-white            - main white button
+ btn-ymain           - main button
+ btn-advanced        - advanced button
+ btn-advanced-big    - advanced big button
  btn-icon             - button for icons
  btn-icon-black       - button for black icons
  btn-socseti-yellow   - button yellow for socseti
@@ -11,6 +12,7 @@ You can use this class for button
 
 @import "../variables.scss";
 
+/* reset style */
 #btn-reset {
   border: none;
   background-color: transparent;
@@ -105,6 +107,13 @@ You can use this class for button
   height: 35px;
 }
 
+/*  Это стили для кнопок 
+# Чтобы их подключить нужно импортировать у себя в файле стилей @import "../components.scss";
+# и в классе для кнопки загруить нужную кнопку например, у нас есть кнопка с класом sort-button
+.sort-button{
+  @extend .btn-main;
+{
+*/ 
 .btn-main {
   font-family: inter, sans-serif;
   display: flex;
