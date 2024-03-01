@@ -1,1 +1,1 @@
-<h2 class="posts-instagram">Instaghram  parts/posts-instagram.php</h2>
+<h2 class="posts-instagram">Instagram  parts/posts-instagram.php</h2>

@@ -37,6 +37,9 @@ function wp_it_volunteers_scripts() {
   wp_enqueue_style( 'home-style', get_template_directory_uri() . '/assets/styles/template-styles/home.css', array('main') );
   wp_enqueue_script( 'home-scripts', get_template_directory_uri() . '/assets/scripts/template-scripts/home.js', array(), false, true );
   
+  wp_enqueue_style( 'next-event-style', get_template_directory_uri() . '/assets/styles/parts-styles/next-event.css', array() );
+  wp_enqueue_script( 'next-event-scripts', get_template_directory_uri() . '/assets/scripts/parts-scripts/next-event.js', array(), false, true );
+
   wp_enqueue_style( 'projects-swiper-style', get_template_directory_uri() . '/assets/styles/parts-styles/projects-swiper.css', array() );
   wp_enqueue_script( 'projects-swiper-scripts', get_template_directory_uri() . '/assets/scripts/parts-scripts/projects-swiper.js', array(), false, true );
   

@@ -54,26 +54,26 @@ You can use this class for button
 
   &:hover,
   &:focus {
-    fill: $btn-hover;
+    fill: red;
   }
 
   &:active {
-    fill: $btn-pressed;
+    fill: orange;
   }
 }
 
 #svg-black {
-  fill: $black2;
-  stroke: $black2;
+  fill: $black;
+  stroke: $black;
 
   & .icon {
     fill: inherit;
-    stroke: $black2;
+    stroke: $black;
   }
 }
 
-#btn-yellow {
-  background-color: $yellow;
+#btn-main {
+  background-color: $btn-main;
 
   &:hover,
   &:focus {
@@ -105,18 +105,19 @@ You can use this class for button
   height: 35px;
 }
 
-.btn-yellow {
+.btn-main {
+  font-family: inter, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 241px;
-  height: 56px;
-  padding: 16px 16px;
-  border-radius: 8px;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: $yellow;
+  min-width: 80px;
+  height: 61px;
+  padding: 16px;
+  border-radius: 15px;
+  color: $white;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: $btn-main;
   border: none;
   cursor: pointer;
   transition: all $animations;
@@ -127,7 +128,7 @@ You can use this class for button
 
   &:hover,
   &:focus {
-    background-color: $btn-hover;
+    box-shadow: $btn-hover-shadow;
   }
   &:active {
     background-color: $btn-pressed;
@@ -139,24 +140,31 @@ You can use this class for button
   
 }
 
-.btn-white {
-  @extend .btn-yellow;
-  color: #0d0d0d;
-  background-color: white;
-  border: 1px solid #f2b800;
+
+.btn-advanced {
+  @extend .btn-main;
+  background: $gradient;
 
   &:hover,
   &:focus {
-    background-color: $btn-inv-hover;
+    box-shadow: $btn-hover-shadow;
   }
   &:active {
-    background-color: $btn-inv-pressed;
+    box-shadow: $btn-hover-shadow;
   }
   &:disabled {
     background-color: $btn-inv-disabled;
     cursor: initial;
   }
 }
+
+.btn-advanced-big{
+  @extend .btn-advanced;
+  padding: 24px 20px;
+  height: 77px;
+
+}
+
 
 .btn-clear {
   @extend #btn-reset;
@@ -174,7 +182,7 @@ You can use this class for button
 .btn-socseti-yellow {
   @extend #btn-svg;
   @extend #btn-socseti;
-  @extend #btn-yellow;
+  @extend #btn-main;
   fill: white;
 }
 
