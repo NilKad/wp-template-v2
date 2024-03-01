@@ -143,6 +143,7 @@ You can use this class for button
 
 .btn-advanced {
   @extend .btn-main;
+  color: $black;
   background: $gradient;
 
   &:hover,
